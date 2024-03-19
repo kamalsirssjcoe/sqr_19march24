@@ -1,0 +1,36 @@
+<html>
+<head>
+	<title> App 4 by Kamal Sir </title>
+	<style>
+		* { font-size:40px; }
+		body { background-color:lightyellow;}
+	</style>
+</head>
+
+<body>
+<center>
+	<h1> Square Finder App by Kamal Sir </h1>
+	<form onsubmit="show()">
+		<input type="number" step="any" id="num" placeholder="enter number "/>
+		<br><br>
+		<input type="submit" />
+	</form>
+		<h2 id="msg" />
+	<script>
+		function show()
+		{
+			event.preventDefault();
+			let num = document.getElementById("num");
+			let msg = document.getElementById("msg");
+
+			let n = parseFloat(num.value);
+			let r = n * n;
+			msg.innerHTML = "square = " + r.toFixed(2);
+		}
+	</script>
+</center>
+</body>
+
+</html>
+
+
